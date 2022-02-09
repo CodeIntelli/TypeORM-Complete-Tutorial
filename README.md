@@ -4,10 +4,10 @@
 
 #### What is Typeorm?
 
-    TypeORM framework is an Object Relational Mapping (ORM) framework.
-    ORM is a type of tool that maps entities with database tables.
-    ORM provides simplified development process by automating object-to-table and table-to-object conversion.
-    Once you can write your data model in one place, it becomes easier to update, maintain, and reuse the code.
+    - TypeORM framework is an Object Relational Mapping (ORM) framework.
+    - ORM is a type of tool that maps entities with database tables.
+    - ORM provides simplified development process by automating object-to-table and table-to-object conversion.
+    - Once you can write your data model in one place, it becomes easier to update, maintain, and reuse the code.
 
 #### Benifits
 
