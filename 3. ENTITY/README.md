@@ -1,22 +1,28 @@
 <!-- @format -->
 
-## CONNECTION
+## ENTITIES
 
 - ## What is Entity?
 
   Entity is a class that maps to a database table (or collection when using MongoDB). You can create an entity by defining a new class and mark it with @Entity():
 
   ```javascript
-  import { createConnection } from 'typeorm';
+  import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 
-  const connection = await createConnection({
-  	type: 'mysql',
-  	host: 'localhost',
-  	port: 3306,
-  	username: 'test',
-  	password: 'test',
-  	database: 'test',
-  });
+  @Entity()
+  export class User {
+  	@PrimaryGeneratedColumn()
+  	id: number;
+
+  	@Column()
+  	firstName: string;
+
+  	@Column()
+  	lastName: string;
+
+  	@Column()
+  	isActive: boolean;
+  }
   ```
 
   [Read More...](https://typeorm.io/#/entities)
