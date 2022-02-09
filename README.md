@@ -9,6 +9,8 @@
 - ORM provides simplified development process by automating object-to-table and table-to-object conversion.
 - Once you can write your data model in one place, it becomes easier to update, maintain, and reuse the code.
 
+![App Screenshot](https://miro.medium.com/max/1000/1*ene2JbbzCfPvBtfQII3V6Q.png)
+
 #### Benifits
 
 - High quality and loosely-coupled applications.
