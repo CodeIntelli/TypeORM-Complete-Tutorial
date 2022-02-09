@@ -20,4 +20,5 @@
 
 ## More introduction
 
-[Documentation](https://www.tutorialspoint.com/typeorm/typeorm_introduction.htm)
+[Documentation](https://typeorm.io/#/)
+[Watch video](https://www.youtube.com/watch?v=zjlzI2lzUXk)

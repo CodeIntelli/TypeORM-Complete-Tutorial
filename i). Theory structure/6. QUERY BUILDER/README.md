@@ -97,6 +97,4 @@ await getConnection()
     .execute();
 ```
 
-### In Brief get details
-
 [In Brief want details plz click here....](https://typeorm.io/#/select-query-builder)
