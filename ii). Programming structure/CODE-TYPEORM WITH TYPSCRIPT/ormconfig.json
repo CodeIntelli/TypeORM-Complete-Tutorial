@@ -1,0 +1,18 @@
+// // configuration code for databse
+{
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "",
+    "database": "Typeorm_CRUD",
+    // You can enable logging of all queries and errors by simply setting 
+    "logging": true,
+    /* Synchronize makes the entity sync with the database every time you run your application in short if you cann add,delete and update new column in the databse 
+    that time it will automatically update the databse once the server is started. */
+    "synchronize": true,
+    // in that enitites means you can pass your created entity like : category,subcategory,customer,product so on.
+    "entities": [
+        "src/entity/*.js"
+    ]
+}
