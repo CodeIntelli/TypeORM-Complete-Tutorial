@@ -1,12 +1,11 @@
 module.exports = {
-    // configuration code for databse
     "type": "mysql",
-    "host": "localhost",
+    "host": "127.0.0.1",
     "port": 3306,
     "username": "root",
     "password": "",
     "database": "Typeorm_CRUD",
-    "logging": true,
+    "logging": false,
     "synchronize": true,
     "entities": [
         "src/entity/*.js"

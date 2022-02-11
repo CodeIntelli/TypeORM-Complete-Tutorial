@@ -12,6 +12,7 @@ import { Question } from "../entityrelatoion/Question";
 import { Game } from "../entityrelatoion/Game";
 import { Person } from "../entityrelatoion/person";
 import { Resolver, reverse } from "dns";
+import { Category } from "../entity/Category";
 
 const Userdata = async (req: Request, res: Response) => {
     // 1. crud perfome uisng getMagaer
@@ -54,7 +55,7 @@ const Userdata = async (req: Request, res: Response) => {
     }) */
 
     /* ---findone find data using by id */
-    /* let Finduser = await entityManager.findOne(User,2);
+   /*  let Finduser = await entityManager.findOne(User,2);
     res.json({
         message:"one user data find",
         data: Finduser,
@@ -70,7 +71,7 @@ const Userdata = async (req: Request, res: Response) => {
 
 
     // 2. crud perform using getRepository
-    // const repository = getRepository(User)
+    const repository = getRepository(Category)
 
     /* ---insert data using insert */
     /* let data = await repository.insert({
@@ -107,12 +108,12 @@ const Userdata = async (req: Request, res: Response) => {
     }) */
 
     /* ---all find using find */
-    /* let Alluser = await repository.find();
+    let Alluser = await repository.find();
     res.json({
         message:"user find",
         data: Alluser,
     })
- */
+
     /* ---findone find data using by id */
     /* let Finduser = await repository.findOne(2);
     res.json({
@@ -348,7 +349,7 @@ const Userdata = async (req: Request, res: Response) => {
     }) */
 
     // 9. QUERY BUILDER
-    const getmanager = getManager();
+    // const getmanager = getManager();
     
     // select
     /* let data = await getmanager
@@ -370,7 +371,7 @@ const Userdata = async (req: Request, res: Response) => {
     .offset(1)
     .getMany() */
     
-   /*  let data = await getmanager
+    /* let data = await getmanager
     .getRepository(Employee)
     .createQueryBuilder("empdata")
     .leftJoinAndSelect("empdata.profile","profile","empdata.gender = :gender",{gender:"female"})
@@ -427,9 +428,6 @@ const Userdata = async (req: Request, res: Response) => {
         message: "user delete",
         data:data
     }) */
-
-
-    
 }
 
 export {
