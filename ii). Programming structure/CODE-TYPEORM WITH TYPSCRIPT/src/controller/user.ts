@@ -14,6 +14,20 @@ import { Person } from "../entityrelatoion/person";
 import { Resolver, reverse } from "dns";
 import { Category } from "../entity/Category";
 
+/* following step:(SEARCH THIS STEP IN THIS FILE AND FOLLOWING THIS)
+1. crud perfome uisng getMagaer
+2. crud perform using getRepository
+3. crud perform using findquery
+4. crud perform using custom repositopry
+5. crud perform using relation
+    1. one to many insert
+    2. many to one insert
+    3. many to many insert
+6 find data using one to one relation
+7. find data using one to many relation
+8. many to many
+9. QUERY BUILDER */
+
 const Userdata = async (req: Request, res: Response) => {
     // 1. crud perfome uisng getMagaer
     const entityManager = getManager();
@@ -202,7 +216,6 @@ const Userdata = async (req: Request, res: Response) => {
         message:"user insert",
         data: data,
     }) */
-
 
 
     // 5. crud perform using relation
