@@ -21,8 +21,9 @@ createConnection({
     // "entities":[User],
     "entities": [
         // 1. /* directly entity name here */ User
-        /* 2. simple entity sync at that application run time */"src/entity/*.ts"
-        // /* 3. entity schema */"src/entitySchema/*.ts"
+        // /* 2. simple entity sync at that application run time */"src/entity/*.ts"
+        // /* 3. entity schema */"src/entitySchema/*.ts",
+        /* irefirehfoirehfoierf 4. entity relation */ "src/entityrelatoion/*.ts"
     ]
 })
 .then(() => {
