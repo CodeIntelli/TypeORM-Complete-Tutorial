@@ -111,3 +111,5 @@
 #### `OPTION-1`
 
     1. make controller folder in controller.ts file [src/controller/userController.ts]
+
+[watch videos](https://youtube.com/playlist?list=PLolI8AY2AS9aNM8SScV0Jh-it4KUHsAgU)
