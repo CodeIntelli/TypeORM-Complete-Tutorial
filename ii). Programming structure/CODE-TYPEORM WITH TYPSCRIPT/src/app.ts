@@ -7,7 +7,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const app = express();
-const port = process.env.TYPEORM_PORT;
+const port = process.env.TYPEORM_PORT || 2024;
 
 app.use(express.json());
 
@@ -37,17 +37,17 @@ app.use(express.json());
 // });
 
 // db connect OPTION-2 MAKE A ORMCONFIG.JSON FILE
-/* createConnection().then(() => {
+createConnection().then(() => {
 console.log("database connected throgh ormconfig.json file");
 })   
 .catch((error) => {
     console.log("database error", error)
-}); */
+});
 
 
 // db connect OPTION-3 make a env file
 //@ts-ignore
-createConnection({
+/* createConnection({
     "type": process.env.TYPEORM_CONNECTION,
     "host": process.env.TYPEORM_HOST,
     "port": process.env.TYPEORM_DBPORT,
@@ -65,7 +65,7 @@ console.log("database connected");
 })   
 .catch((error) => {
     console.log("database error", error)
-});
+}); */
 
 app.use('/',router)
 

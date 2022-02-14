@@ -25,7 +25,11 @@
 
 #### `OPTION-2`
 
-    1. (CONNECTION USING ORMCONFIG.JSON FILE)
+    1. (CONNECTION USING ORMCONFIG.JSON OR ORMCONFIG.TS FILE) [foldername/ormconfig.json Or ormconfig.ts]
+
+#### `OPTION-3`
+
+    1. (CONNECTION USING .ENV FILE) [foldername/.env]
 
 #### **STEP-3: MAKE ENITITY**
 
